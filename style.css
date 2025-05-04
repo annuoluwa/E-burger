@@ -177,7 +177,6 @@ form{
     background-image: url(images/burger.jpg);
     background-repeat: no-repeat;
     background-size: contain;
-    line-height: 2;
     margin: 2rem auto;
     z-index: 0;
     width: 100%;
@@ -202,11 +201,19 @@ form::before{
 
 input, label, p{
     font-size: 1.5rem;
-    line-height: 2;
+    line-height: 1.2;
     margin: 1rem;
     color: white;
     font-weight: 800;
 }
+
+.submit{
+    padding: 1rem;
+    background-color: #fecccc;
+    color:#ffffff;
+    font-weight: 500;
+}
+
 
 
 footer{
@@ -310,7 +317,7 @@ color: #ffffff;
 
         input, label, p{  /*order responsiveness*/
             font-size: 1.5rem;
-            line-height: 2;
+            line-height: 1.5;
             margin: 1rem;
             color: white;
             font-weight: 700;
