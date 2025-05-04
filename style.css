@@ -1,0 +1,309 @@
+/*base styles-mobile first*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+html, body{
+    overflow-x: auto;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+    background-color: #f3c4c4;
+    min-height: 100vh; /* Take up full viewport height */
+    
+    
+
+}
+nav{
+    display: flex;
+    width: 100%;
+    background-color: #b30000;
+    padding: 0.5rem;
+    
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    list-style: none;
+    align-items: center;
+    
+    
+    
+}
+
+nav a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin-inline: 1rem;
+    text-transform: uppercase;
+}
+
+nav img{
+    width: 20%;
+    margin-top: 0;
+}
+
+/*Hero*/
+
+.burger{
+
+    background-image: url("images/burger.jpg");
+    margin-top: 1rem;
+    width: 100%;
+    height: 55vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+    
+}
+
+.burger::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0 0 0.5);
+    z-index: -1;
+    opacity: 0.3;
+    height: 100%;
+    width: 100%;
+    
+}
+.h1-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+h1{
+    text-align: center;
+    padding-top: 3rem;
+    color: white;
+    z-index: 3;
+    font-size: 3.5rem;
+    font-family: "Pacifico", cursive;
+    font-weight: 300;
+    
+}
+
+
+/*body*/
+
+.body-container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.main-container{
+   flex: 1;
+}
+
+section{
+    padding:1rem 0 1rem 0;
+}
+
+/*button*/
+
+button{
+    display: block;
+    margin: 2rem auto;
+    padding: 0.5rem;
+    background-color: #b30000;
+    border-radius: 3rem;
+    
+}
+
+button a{
+    color: #ffffff;
+    font-weight:500;
+    font-size: large;
+}
+
+
+
+button::after{
+    content: "  ⮜";
+    display: inline-block;
+    transform: rotate(19deg) ;
+    position: relative;
+    top: 0.3rem;
+
+
+}
+
+button a{
+    text-decoration: none;
+    
+}
+
+
+
+/*order page*/
+
+.body-container{
+    flex: 1;
+    
+}
+    
+.section-order{
+    white-space:;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 100%;
+    overflow-x: hidden;
+
+    
+    
+}
+form{
+    position: relative;
+    background-image: url(images/burger.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    line-height: 2rem;
+    margin: 2rem auto;
+    z-index: 0;
+    width: 100%;
+    max-width: 100%;
+    
+    
+}
+
+
+form::before{
+    content: "";
+    background-color: rgb(0 0 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    opacity: 0.3;
+    z-index: -1
+   
+}
+
+input, label, p{
+    font-size: 1.5rem;
+    line-height: 2;
+    margin: 1rem;
+    color: white;
+    font-weight: 800;
+}
+
+
+footer{
+    text-align: center;
+color: #ffffff;
+    background-color: #b30000;
+    padding: 1rem;
+}
+
+/*tablets*/
+
+@media (min-width: 768px){
+   nav a{
+    font-size: 1rem;
+   }
+   
+    h1{
+        font-size: 3rem;
+        font-weight: 600;
+        padding-top: 1.5rem;
+    }
+
+    input, label, p{  /*order responsiveness*/
+        font-size: 0.8rem;
+        line-height: 1;
+        margin: 0.3rem;
+        color: white;
+        font-weight: 600;
+    }
+
+    form{
+        background-size: cover;
+    }
+
+    form::before{
+        opacity: 0.4;
+    }
+
+    footer{
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 769px){
+    h1{
+        font-size: 4rem;
+        font-weight: 600;
+        padding-top: 4rem;
+    }
+
+    nav a{
+        font-size: 1.6rem;
+    }
+    footer{
+        font-size: 1.5rem;
+    }
+}
+
+    /*small laptops*/
+
+    @media(min-width: 992px){
+        
+        h1{
+            font-size: 4rem;
+            font-weight: 600;
+            padding-top: 3rem;
+        }
+    
+        nav a{
+            font-size: 1.6rem;
+        }
+        button a{
+            font-size: 1.7rem;
+        }
+        footer{
+            font-size: 1.5rem;
+        }
+
+    }
+
+    /*desktops*/
+
+    @media (min-width: 1200px){
+        h1{
+            font-size: 6rem;
+            font-weight: 600;
+            padding-top: 12rem;
+        }
+    
+        nav a{
+            font-size: 1.9rem;
+        }
+        button a{
+            font-size: 1.7rem;
+        }
+        footer{
+            font-size: 1.9rem;
+        }
+
+    }

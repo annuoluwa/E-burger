@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+<div class="body-container">
+    <nav>
+        <ul>
+        <li><img src="images/logo.png"></li>
+
+        <li><a href="index.html"> Home</a></li>
+        <li><a href="#"> menu </a></li>
+        </ul>
+
+    </nav>
+<div class="form-container">
+    <section class="section-order">
+        <form action="./example.html" method="post">
+            <label for="name">Name</label>
+            <input id="name" type="text" name="name" required><br>
+            
+            <!--bun-->
+
+            <p>Bun-type</p>
+            <label for ="seeded">seeded</label>
+            <input id="seeded" type="radio" name="bun" value="seeded" required>
+            <label for ="plain">plain</label>
+            <input id="plain" type="radio" name="bun" value="plain" required> <br>
+
+            <!--cheese-->
+    
+            <label for="cheese">Cheese</label>
+            <select id = "cheese" name="cheese">
+                <option value = "select">Select one</option>
+                <option value = "single cheese">Single Cheese</option>
+                <option value= "double-cheese">Double Cheese</option>
+                <option value = "no-cheese">No Cheese</option>
+            </select>
+
+            <!--fillings-->
+
+            <p>fillings</p>
+            <label for="beef">beef</label>
+            <input type = "radio" id="beef" name="filling" required>
+
+            <label for="chicken">chicken</label>
+            <input type = "radio" id="chicken" name="filling" required>
+
+            <label for="fish">fish</label>
+            <input type = "radio" id="fish" name="filling" required>
+
+            <label for="prawn">prawn-in-batter</label>
+            <input type = "radio" id="prawn" name="filling" required>
+
+            <p> payment</p>
+            <label for="card">Card</label>
+            <input type="text" id="card" name="card" inputmode="numeric" pattern="\d{13, 16}" required><br>
+            <label for="expiry">Expiry</label>
+            <input type="text" id="expiry" name="expiry" placeholder="MM/YY" pattern="\d{2}/\d{2}" inputmode="numeric" autocomplete="off" required><br>
+            <label for = "cvc">CVC</label>
+            <input id="cvc" type="text" name="cvc" placeholder="---" pattern="\d{3, 4}" inputmode="numeric" autocomplete="off" required><br>
+
+            <input type="submit" value="submit">
+            
+            
+        </form>
+    </section>
+</div>
+    <footer>
+        &copy; e-burger 2025
+    </footer>
+    </div>
+</body>
+</html>
