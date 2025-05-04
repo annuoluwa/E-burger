@@ -177,7 +177,7 @@ form{
     background-image: url(images/burger.jpg);
     background-repeat: no-repeat;
     background-size: contain;
-    line-height: 2rem;
+    line-height: 2;
     margin: 2rem auto;
     z-index: 0;
     width: 100%;
@@ -254,7 +254,7 @@ color: #ffffff;
     h1{
         font-size: 4rem;
         font-weight: 600;
-        padding-top: 4rem;
+        padding-top: 4.5rem;
     }
 
     nav a{
@@ -278,6 +278,13 @@ color: #ffffff;
         nav a{
             font-size: 1.6rem;
         }
+        input, label, p{  /*order responsiveness*/
+            font-size: 1.8rem;
+            line-height: 2;
+            margin: 1rem;
+            color: white;
+            font-weight: 700;
+        }
         button a{
             font-size: 1.7rem;
         }
@@ -294,7 +301,7 @@ color: #ffffff;
         h1{
             font-size: 6rem;
             font-weight: 600;
-            padding-top: 1rem;
+            padding-top: 4.5rem;
         }
     
         nav a{
